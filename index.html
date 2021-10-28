@@ -1,10 +1,39 @@
+<!DOCTYPE>
+
 <html>
+
   <head>
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    
+    <header>
+      <h1 class="header-text">What's for Dinner?</h1>
+      <button class="header-button">ADD A RECIPE</button>
+    </header>
+    <main>
+      <form>
+        <title>What are you looking for?</title>
+        <div>
+          <input type="radio" id="side" name="meal" value="side">
+          <label for="side">Side</label>
+
+          <input type="radio" id="main-dish" name="meal" value="main-dish">
+          <label for="main-dish">Main Dish</label>
+
+          <input type="radio" id="dessert" name="meal" value="dessert">
+          <label for="dessert">Dessert</label>
+
+          <input type="radio" id="entire-meal" name="meal" value="entire-meal">
+          <label for="entire-meal">Entire Meal</label>
+        </div>
+        <button>LET'S COOK</button>
+      </form>
+        <image src="./assets/cookpot.svg" alt="cook pot icon">
+      <section class="output">
+      </section>
+    </main>
   </body>
   <script type="text/javascript" src="main.js"></script>
 </html>
