@@ -16,13 +16,14 @@ body {
 header {
   background: #0fb9b1;
   display: flex;
-  justify-content: center; 
+  justify-content: space-between;
 }
 
 .header-text {
   font-family: 'Roboto', sans-serif;
   text-align: left;
-  font-size: 18;
+  font-size: 18px;
+  padding: 50px 50px 50px 50px;
 }
 
 .header-button {
