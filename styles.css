@@ -36,6 +36,7 @@ header {
 }
 
 .header-button {
+  visibility: hidden;
   margin-right: 25px;
   padding: 10px;
   font-size: 16px;
@@ -45,4 +46,41 @@ header {
 
 .icon {
   width: 100px;
+}
+
+.box {
+  height: 400px;
+  width: 480px;
+  background-color: rgba(225, 225, 225, .9);
+  margin-bottom: 19%;
+}
+
+main {
+height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.button-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+}
+
+#entire-meal {
+  visibility: hidden;
+}
+
+.title-text {
+  visibility: hidden;
+}
+
+.content-text {
+  visibility: hidden;
 }

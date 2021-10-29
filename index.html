@@ -13,25 +13,37 @@
       <button class="header-button">ADD A RECIPE</button>
     </header>
     <main>
-      <section class="left-box">
+      <section class="box left-box">
         <title>What are you looking for?</title>
-        <div>
-          <input type="radio" id="side" name="meal" value="side">
-          <label for="side">Side</label>
+        <div class="button-list">
 
-          <input type="radio" id="main-dish" name="meal" value="main-dish">
-          <label for="main-dish">Main Dish</label>
+          <label class="button">
+            <input type="radio" name="meal">
+            Side
+          </label>
 
-          <input type="radio" id="dessert" name="meal" value="dessert">
-          <label for="dessert">Dessert</label>
+          <label class="button">
+            <input type="radio" name="meal">
+            Main Dish
+          </label>
 
-          <input type="radio" id="entire-meal" name="meal" value="entire-meal">
-          <label for="entire-meal">Entire Meal</label>
+          <label class="button">
+            <input type="radio" name="meal">
+            Dessert
+          </label>
+
+          <label class="button" id="entire-meal">
+            <input type="radio" name="meal">
+            Entire Meal
+          </label>
+
         </div>
-        <button>LET'S COOK</button>
+        <button class="lets-cook-button">LET'S COOK</button>
       </section>
-      <section class="right-box">
+      <section class="box right-box">
         <image class="icon" src="./assets/cookpot.svg" alt="cook pot icon">
+        <p class="title-text">You should make:</p>
+        <p class="content-text">Recipe name goes here</p>
       </section>
     </main>
   </body>
