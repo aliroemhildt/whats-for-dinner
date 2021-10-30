@@ -5,10 +5,13 @@ teal - #0fb9b1;
 frosted white - rgba(225, 225, 225, .9);
 grey - #95a5a6;
 red - #ee5253
-
 */
+
+
+/* DOCUMENT */
 html {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -19,6 +22,8 @@ body {
   padding: 0;
 }
 
+
+/* HEADER */
 header {
   background: #0fb9b1;
   display: flex;
@@ -44,23 +49,45 @@ header {
   border-radius: 6px;
 }
 
-.icon {
-  width: 100px;
-}
 
-.box {
-  height: 400px;
-  width: 480px;
-  background-color: rgba(225, 225, 225, .9);
-  margin-bottom: 19%;
-}
+/* BOXES */
 
 main {
-height: 100%;
-  display: flex;
+  /* height: 100%; */
+  height: 100vh;
+  margin: 8%;
+  /* margin-top: 10%; */
+  /* display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: center; */
   font-family: 'Roboto', sans-serif;
+}
+
+  .box {
+    height: 390px;
+    width: 500px;
+    /* margin-top: 4%; */
+    background-color: rgba(225, 225, 225, .9);
+  }
+
+
+/* LEFT BOX */
+
+.left-box {
+  /* margin-left: 8%; */
+  float: left;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-box-title {
+  font-size: 30px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-bottom: 0;
+  font-weight: bold;
 }
 
 .button-list {
@@ -71,10 +98,43 @@ height: 100%;
 .button {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  padding-left: 30px;
+  font-size: 20px;
+}
+
+.lets-cook-button {
+  visibility: hidden;
+  margin-right: 25px;
+  padding: 10px;
+  font-size: 16px;
+  border-style: none;
+  border-radius: 6px;
+}
+
+.radio {
+  margin-right: 10px;
 }
 
 #entire-meal {
   visibility: hidden;
+}
+
+
+/* RIGHT BOX */
+
+.right-box {
+  /* margin-right: 8%; */
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.icon {
+  width: 100px;
 }
 
 .title-text {
