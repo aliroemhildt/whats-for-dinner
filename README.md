@@ -16,7 +16,7 @@ When the page loads, users will see three options for types of recipes: side, ma
 
 **Clear Selection**
 
-<iframe src="https://giphy.com/embed/YVCPRyVy3pPWIUbknQ" width="480" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/YVCPRyVy3pPWIUbknQ">via GIPHY</a></p>
+![Clear Selection](https://media.giphy.com/media/YVCPRyVy3pPWIUbknQ/giphy.gif)
 
 ## Languages 
 
