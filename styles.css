@@ -50,7 +50,6 @@ header {
 
 
 /* BOXES */
-
 main {
   height: 100%; /* heigh for main section (everything below nav bar) */
   font-family: 'Roboto', sans-serif; /* font family for all main children */
@@ -65,11 +64,7 @@ main {
 
 
 /* LEFT BOX */
-
 .left-box {
-  /* border-style: dashed;
-  border-color: red; */
-
   margin-left: 125px; /* left margin for left box */
   float: left; /* pushes this element to the left side of parent element (main) */
   display: flex; /* flexbox for child elements (p, div with buttons) */
@@ -79,17 +74,11 @@ main {
 }
 
 .left-box-title {
-  /* border-style: dashed;
-  border-color: blue; */
-
   font-size: 28px; /* font style for title of left box */
   font-weight: bold;
   padding: 10px;
   margin: 0; /* margin around this text element */
   margin-left: 30px;
-  /* padding: 30px; */
-  /* margin-top: 60px; */
-  /* margin-bottom: 10; */
 }
 
 .required-field {
@@ -99,9 +88,6 @@ main {
 }
 
 .button-list { /* box/element holding all of the button label/input elements */
-  /* border-style: dashed;
-  border-color: yellow; */
-
   margin-left: 30px;
   display: flex; /* flexbox for children elements (button inputs and labels) */
   flex-direction: column; /* align child elements in a column */
@@ -109,9 +95,6 @@ main {
 }
 
 .radio-button {
-  /* border-style: dashed;
-  border-color: purple; */
-
   padding: 10px; /* font size and padding for button label elements */
   font-size: 20px;
 }
@@ -131,17 +114,9 @@ main {
   margin-right: 10px; /* margin around button text (adds space between radio button and text) */
 }
 
-/* #entire-meal {
-  visibility: hidden;
-} */
-
 
 /* RIGHT BOX */
-
 .right-box {
-  /* border-style: dashed;
-  border-color: pink; */
-
   margin-right: 125px; /* margin between right box and right side of page */
   float: right; /* push to right side of parent element (main) */
   position: relative; /* allows right box, home-view, and recipe-view divs to all sit in the same spot */
@@ -150,11 +125,7 @@ main {
   align-items: center; */
 }
 
-/* div with the same dimension as the right box element, parent to icon element */
-.home-view {
-  /* border-style: dashed;
-  border-color: dark blue; */
-
+.home-view { /* div with the same dimension as the right box element, parent to icon element */
   height: 390px; /* set height and width of div to be the same as the right-box element */
   width: 500px;
   position: absolute; /* allows right box, home-view, and recipe-view divs to all sit in the same spot */
@@ -164,36 +135,46 @@ main {
 }
 
 .icon {
-  /* border-style: dashed;
-  border-color: green; */
-
   width: 120px; /* width of pot icon image */
 }
 
-/* div with same dimensions as right box, parent to recipe text */
-.recipe-view {
-  /* border-style: dashed;
-  border-color: dark blue; */
-
+.recipe-view { /* div with same dimensions as right box, parent to recipe text */
   height: 390px; /* set height and width of div to be the same as the right-box element */
   width: 500px;
   position: absolute; /* allows right box, home-view, and recipe-view divs to all sit in the same spot */
-  display: flex; /* flexbox for text elements that are children to this div, making them a column and centering in this div */
-  justify-content: center;
+  /* display: flex; /* flexbox for text elements that are children to this div, making them a column and centering in this div */ */
+  /* justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; */
 }
 
-/* text formatting for recipe-view title */
-.title-text {
-  /* border-style: dashed;
-  border-color: teal; */
+.title-text { /* text formatting for recipe-view title */
+  font-style: italic;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 125px;
 }
 
-/* text formatting for recipe-view title */
-.content-text {
-  /* border-style: dashed;
-  border-color: orange; */
+.recipe-text { /* text formatting for recipe-view text */
+font-weight: 800;
+font-size: 26px;
+text-align: center;
+margin: 10px;
+}
+
+.clear-button {
+  padding: 8px; /* padding and font size for button text */
+  font-size: 16px;
+  color: white;
+  border-style: none; /* border formatting for button */
+  border-radius: 6px;
+  background-color: #95a5a6; /* button color */
+  margin: 0 30px 30px 0;
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* use to hide elements */
