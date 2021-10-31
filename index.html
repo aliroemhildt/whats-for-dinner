@@ -10,28 +10,44 @@
   <body>
     <header>
       <h1 class="header-text">What's for Dinner?</h1>
-      <button class="header-button">ADD A RECIPE</button>
+      <button class="header-button hidden">ADD A RECIPE</button>
     </header>
     <main>
-      <form>
-        <title>What are you looking for?</title>
-        <div>
-          <input type="radio" id="side" name="meal" value="side">
-          <label for="side">Side</label>
+      <section class="box left-box">
+        <p class='left-box-title'>What are you looking for?<span class="required-field">*</span></p>
+        <div class="button-list">
 
-          <input type="radio" id="main-dish" name="meal" value="main-dish">
-          <label for="main-dish">Main Dish</label>
+          <label class="radio-button">
+            <input class ="radio" type="radio" name="meal">
+            Side
+          </label>
 
-          <input type="radio" id="dessert" name="meal" value="dessert">
-          <label for="dessert">Dessert</label>
+          <label class="radio-button">
+            <input class ="radio" type="radio" name="meal">
+            Main Dish
+          </label>
 
-          <input type="radio" id="entire-meal" name="meal" value="entire-meal">
-          <label for="entire-meal">Entire Meal</label>
+          <label class="radio-button">
+            <input class ="radio" type="radio" name="meal">
+            Dessert
+          </label>
+
+          <label class="radio-button hidden" id="entire-meal">
+            <input class ="radio" type="radio" name="meal">
+            Entire Meal
+          </label>
+
         </div>
-        <button>LET'S COOK</button>
-      </form>
-        <image src="./assets/cookpot.svg" alt="cook pot icon">
-      <section class="output">
+        <button class="lets-cook-button">LET'S COOK!</button>
+      </section>
+      <section class="box right-box">
+        <div class="home-view">
+          <image class="icon" src="./assets/cookpot.svg" alt="cook pot icon">
+        </div>
+        <div class="recipe-view hidden">
+          <p class="title-text">You should make:</p>
+          <p class="content-text">Recipe name goes here</p>
+        </div>
       </section>
     </main>
   </body>
