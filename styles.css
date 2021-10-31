@@ -41,12 +41,11 @@ header {
 }
 
 .header-button {
-  /* visibility: hidden; */
   margin-right: 25px; /* margin for button */
   padding: 10px; /* padding for text inside button */
   font-size: 16px; /* font stye for button */
   border-style: none; /* border style and radius for button outline */
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 
@@ -68,8 +67,8 @@ main {
 /* LEFT BOX */
 
 .left-box {
-  border-style: dashed;
-  border-color: red;
+  /* border-style: dashed;
+  border-color: red; */
 
   margin-left: 125px; /* left margin for left box */
   float: left; /* pushes this element to the left side of parent element (main) */
@@ -80,116 +79,124 @@ main {
 }
 
 .left-box-title {
-  border-style: dashed;
-  border-color: blue;
+  /* border-style: dashed;
+  border-color: blue; */
 
-  font-size: 30px;
+  font-size: 28px; /* font style for title of left box */
   font-weight: bold;
-  margin: 0;
-  margin-left: 20px;
+  padding: 10px;
+  margin: 0; /* margin around this text element */
+  margin-left: 30px;
   /* padding: 30px; */
   /* margin-top: 60px; */
   /* margin-bottom: 10; */
 }
 
-.button-list {
-  border-style: dashed;
-  border-color: yellow;
+.required-field {
+  color: #ee5253;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
-  display: flex;
-  flex-direction: column;
-  /* padding: 30px;
-  padding-top: 8px;
-  padding-bottom: 8px; */
+.button-list { /* box/element holding all of the button label/input elements */
+  /* border-style: dashed;
+  border-color: yellow; */
+
+  margin-left: 30px;
+  display: flex; /* flexbox for children elements (button inputs and labels) */
+  flex-direction: column; /* align child elements in a column */
+
 }
 
 .radio-button {
-  border-style: dashed;
-  border-color: purple;
+  /* border-style: dashed;
+  border-color: purple; */
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 8px;
+  padding: 10px; /* font size and padding for button label elements */
   font-size: 20px;
 }
 
 .lets-cook-button {
-  border-style: dashed;
-
-  padding: 8px;
+  padding: 8px; /* padding and font size for button text */
   font-size: 16px;
-  /* border-style: none; */
+  border-style: none; /* border formatting for button */
   border-radius: 6px;
-  background-color: #0fb9b1;
-  margin-bottom: 60px;
-  margin-left: 40px;
+  background-color: #0fb9b1; /* button color */
+  margin-left: 30px; /* margin around button element */
+  margin-top: 15px;
+  width: 200px;
 }
 
 .radio {
-  margin-right: 10px;
+  margin-right: 10px; /* margin around button text (adds space between radio button and text) */
 }
 
-#entire-meal {
+/* #entire-meal {
   visibility: hidden;
-}
+} */
 
 
 /* RIGHT BOX */
 
 .right-box {
-  border-style: dashed;
-  border-color: pink;
+  /* border-style: dashed;
+  border-color: pink; */
 
   margin-right: 125px; /* margin between right box and right side of page */
   float: right; /* push to right side of parent element (main) */
-  position: relative;
-  /* display: flex; /* flexbox for children (icon and title text) */ */
+  position: relative; /* allows right box, home-view, and recipe-view divs to all sit in the same spot */
+  /* display: flex; /* flexbox for children (icon and title text) - not sure if I need this since the divs have their own flex display properties  */
   /* justify-content: center;
   align-items: center; */
 }
 
+/* div with the same dimension as the right box element, parent to icon element */
 .home-view {
-  border-style: dashed;
-  border-color: dark blue;
+  /* border-style: dashed;
+  border-color: dark blue; */
 
-  height: 390px;
+  height: 390px; /* set height and width of div to be the same as the right-box element */
   width: 500px;
-  position: absolute;
-  display: flex;
+  position: absolute; /* allows right box, home-view, and recipe-view divs to all sit in the same spot */
+  display: flex; /* flexbox for icon element, centering it in this div */
   justify-content: center;
   align-items: center;
 }
 
 .icon {
-  border-style: dashed;
-  border-color: green;
+  /* border-style: dashed;
+  border-color: green; */
 
-  width: 120px;
+  width: 120px; /* width of pot icon image */
 }
 
+/* div with same dimensions as right box, parent to recipe text */
 .recipe-view {
-  border-style: dashed;
-  border-color: dark blue;
+  /* border-style: dashed;
+  border-color: dark blue; */
 
-  height: 390px;
+  height: 390px; /* set height and width of div to be the same as the right-box element */
   width: 500px;
-  position: absolute;
-  display: flex;
+  position: absolute; /* allows right box, home-view, and recipe-view divs to all sit in the same spot */
+  display: flex; /* flexbox for text elements that are children to this div, making them a column and centering in this div */
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  visibility: hidden;
 }
 
+/* text formatting for recipe-view title */
 .title-text {
-  border-style: dashed;
-  border-color: teal;
+  /* border-style: dashed;
+  border-color: teal; */
 }
 
+/* text formatting for recipe-view title */
 .content-text {
-  border-style: dashed;
-  border-color: orange;
-  /* visibility: hidden; */
+  /* border-style: dashed;
+  border-color: orange; */
+}
+
+/* use to hide elements */
+.hidden {
+  display: none;
 }
