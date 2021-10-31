@@ -1,3 +1,4 @@
+// ELEMENTS
 var allButtons = document.querySelectorAll('.radio');
 var sideRadioButton = document.querySelector('input[value="side"]');
 var mainDishRadioButton = document.querySelector('input[value="main-dish"]');
@@ -5,18 +6,22 @@ var dessertRadioButton = document.querySelector('input[value="dessert"]');
 var letsCookButton = document.querySelector('.lets-cook-button');
 var recipeView = document.querySelector('.recipe-view');
 var homeView = document.querySelector('.home-view');
+var clearButtonView = document.querySelector('.clear-buttoon-view');
 var recipeName = document.querySelector('.recipe-text');
 var clearButton = document.querySelector('.clear-button');
 
+// VARIABLES
 var selectedValue;
 var recipeToDisplay;
 
+// EVENT LISTENERS
 letsCookButton.addEventListener('click', displayRecipe);
 sideRadioButton.addEventListener('click', selectRecipeType);
 mainDishRadioButton.addEventListener('click', selectRecipeType);
 dessertRadioButton.addEventListener('click', selectRecipeType);
 clearButton.addEventListener('click', clearSelection);
 
+// FUNCTIONS
 function displayRecipe() {
   checkRadioButtons();
   chooseRecipe();
@@ -41,6 +46,17 @@ function clearSelection() {
   addHidden(letsCookButton);
 };
 
+function chooseRecipe() {
+  var inputs = ['side', 'main-dish', 'dessert'];
+  var recipeTypes = [sides, mainDishes, desserts];
+  for (i = 0; i < inputs.length; i++) {
+    if (selectedValue === inputs[i]) {
+      recipeList = recipeTypes[i];
+      recipeToDisplay = recipeList[getRandomIndex(recipeList)];
+    };
+  };
+};
+
 function checkRadioButtons() {
   for (var i = 0; i < allButtons.length; i++) {
     if (allButtons[i].checked) {
@@ -48,37 +64,6 @@ function checkRadioButtons() {
     };
   };
 };
-
-function chooseRecipe() {
-  if (selectedValue === 'side') {
-    newRecipeToDisplay = sides[getRandomIndex(sides)];
-    if (newRecipeToDisplay === recipeToDisplay) {
-      newRecipeToDisplay = sides[getRandomIndex(sides)];
-    };
-  } else if (selectedValue === 'main-dish') {
-    newRecipeToDisplay = mainDishes[getRandomIndex(sides)];
-    if (newRecipeToDisplay === recipeToDisplay) {
-      newRecipeToDisplay = mainDishes[getRandomIndex(sides)];
-    };
-  } else if (selectedValue === 'dessert') {
-    newRecipeToDisplay = desserts[getRandomIndex(sides)];
-    if (newRecipeToDisplay === recipeToDisplay) {
-      newRecipeToDisplay = desserts[getRandomIndex(sides)];
-    };
-  };
-  recipeToDisplay = newRecipeToDisplay;
-};
-// need to refactor, but not sure how...
-//   var values = ['side', 'main-dish', 'dessert']
-//   var recipeTypes = ['sides', 'mainDishes', 'desserts']
-//   for (var i = 0; i < values.length; i++) {
-//     if (selectedValue === values[i]) {
-//       var recipeType = recipeTypes[i];
-//     };
-//   };
-//   var recipe = ${recipeType[getRandomIndex(sides)]};
-//   return recipe;
-// };
 
 function deselectRadioButtons() {
   for (var i = 0; i < allButtons.length; i++) {
