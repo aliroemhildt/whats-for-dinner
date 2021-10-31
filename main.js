@@ -6,6 +6,7 @@ var dessertRadioButton = document.querySelector('input[value="dessert"]');
 var letsCookButton = document.querySelector('.lets-cook-button');
 var recipeView = document.querySelector('.recipe-view');
 var homeView = document.querySelector('.home-view');
+var clearButtonView = document.querySelector('.clear-buttoon-view');
 var recipeName = document.querySelector('.recipe-text');
 var clearButton = document.querySelector('.clear-button');
 
