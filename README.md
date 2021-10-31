@@ -10,9 +10,11 @@ When the page loads, users will see three options for types of recipes: side, ma
 
 **Landing Page View**
 
-<img width="500" alt="Screen Shot 2021-10-31 at 11 26 28 AM" src="https://user-images.githubusercontent.com/90285501/139595262-e2294983-3fd5-4c94-9106-73a924b9fbf3.png">
+<img width="480" alt="Screen Shot 2021-10-31 at 11 26 28 AM" src="https://user-images.githubusercontent.com/90285501/139595262-e2294983-3fd5-4c94-9106-73a924b9fbf3.png">
 
 **Select Recipe and View Random Selection**
+
+![View Recipe](https://media.giphy.com/media/aSm32KpwTbAbVJsbaY/giphy.gif)
 
 **Clear Selection**
 
