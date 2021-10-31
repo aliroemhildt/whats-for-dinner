@@ -1,6 +1,6 @@
 # What's for Dinner?
 
-An app that helps users choose a recipe and put together meals. 
+An app that helps users choose a recipe. 
 
 ## Overview
 
