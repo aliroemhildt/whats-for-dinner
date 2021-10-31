@@ -9,11 +9,13 @@ red - #ee5253
 
 
 /* DOCUMENT */
+/* sets the height and with of the page */
 html {
   height: 100%;
   width: 100%;
 }
 
+/* background picture */
 body {
   background-image: url("./assets/burger-friends.jpg");
   background-size: cover;
@@ -26,26 +28,24 @@ body {
 /* HEADER */
 header {
   background: #0fb9b1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-  padding: 5px;
+  display: flex; /* flexbox for header-text and header-button elements */
+  justify-content: space-between; /* space between elements on nav bar */
+  align-items: center; /* vertically center nav bar elements */
+  height: 65px; /* height of nav bar */
 }
 
 .header-text {
-  font-family: 'Roboto', sans-serif;
-  text-align: left;
+  font-family: 'Roboto', sans-serif; /* set text style for this element */
   font-size: 24px;;
   margin-left:20px;
 }
 
 .header-button {
-  visibility: hidden;
-  margin-right: 25px;
-  padding: 10px;
-  font-size: 16px;
-  border-style: none;
+  /* visibility: hidden; */
+  margin-right: 25px; /* margin for button */
+  padding: 10px; /* padding for text inside button */
+  font-size: 16px; /* font stye for button */
+  border-style: none; /* border style and radius for button outline */
   border-radius: 6px;
 }
 
@@ -53,64 +53,77 @@ header {
 /* BOXES */
 
 main {
-  /* height: 100%; */
-  height: 100vh;
-  margin: 8%;
-  /* margin-top: 10%; */
-  /* display: flex;
-  justify-content: space-around;
-  align-items: center; */
-  font-family: 'Roboto', sans-serif;
+  height: 100%; /* heigh for main section (everything below nav bar) */
+  font-family: 'Roboto', sans-serif; /* font family for all main children */
 }
 
-  .box {
-    height: 390px;
-    width: 500px;
-    /* margin-top: 4%; */
-    background-color: rgba(225, 225, 225, .9);
-  }
+.box {
+  height: 390px; /* height and width for both boxes */
+  width: 500px;
+  margin-top: 50px; /* margin for top of each box */
+  background-color: rgba(225, 225, 225, .9); /* box color */
+}
 
 
 /* LEFT BOX */
 
 .left-box {
-  /* margin-left: 8%; */
-  float: left;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: center;
+  border-style: dashed;
+  border-color: red;
+
+  margin-left: 125px; /* left margin for left box */
+  float: left; /* pushes this element to the left side of parent element (main) */
+  display: flex; /* flexbox for child elements (p, div with buttons) */
+  align-items: flex-start; /* aligne child elements to the left */
+  flex-direction: column; /* put child elements in column */
+  justify-content: center; /* vertically center child elements */
 }
 
 .left-box-title {
+  border-style: dashed;
+  border-color: blue;
+
   font-size: 30px;
-  padding: 10px;
-  padding-left: 30px;
-  padding-bottom: 0;
   font-weight: bold;
+  margin: 0;
+  margin-left: 20px;
+  /* padding: 30px; */
+  /* margin-top: 60px; */
+  /* margin-bottom: 10; */
 }
 
 .button-list {
+  border-style: dashed;
+  border-color: yellow;
+
   display: flex;
   flex-direction: column;
+  /* padding: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px; */
 }
 
-.button {
+.radio-button {
+  border-style: dashed;
+  border-color: purple;
+
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px;
-  padding-left: 30px;
+  padding: 8px;
   font-size: 20px;
 }
 
 .lets-cook-button {
-  visibility: hidden;
-  margin-right: 25px;
-  padding: 10px;
+  border-style: dashed;
+
+  padding: 8px;
   font-size: 16px;
-  border-style: none;
+  /* border-style: none; */
   border-radius: 6px;
+  background-color: #0fb9b1;
+  margin-bottom: 60px;
+  margin-left: 40px;
 }
 
 .radio {
@@ -125,22 +138,58 @@ main {
 /* RIGHT BOX */
 
 .right-box {
-  /* margin-right: 8%; */
-  float: right;
+  border-style: dashed;
+  border-color: pink;
+
+  margin-right: 125px; /* margin between right box and right side of page */
+  float: right; /* push to right side of parent element (main) */
+  position: relative;
+  /* display: flex; /* flexbox for children (icon and title text) */ */
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.home-view {
+  border-style: dashed;
+  border-color: dark blue;
+
+  height: 390px;
+  width: 500px;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .icon {
-  width: 100px;
+  border-style: dashed;
+  border-color: green;
+
+  width: 120px;
+}
+
+.recipe-view {
+  border-style: dashed;
+  border-color: dark blue;
+
+  height: 390px;
+  width: 500px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  visibility: hidden;
 }
 
 .title-text {
-  visibility: hidden;
+  border-style: dashed;
+  border-color: teal;
 }
 
 .content-text {
-  visibility: hidden;
+  border-style: dashed;
+  border-color: orange;
+  /* visibility: hidden; */
 }
